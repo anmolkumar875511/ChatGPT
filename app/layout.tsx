@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ChatGPT",
-  description: "Ask your questions",
+  description: "Ask your question",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-serif", merriweather.variable, robotoHeading.variable)}
     >
-      <body>
+      <body className="min-h-full flex flex-col">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
